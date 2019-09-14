@@ -47,6 +47,11 @@
     <Compile Include="Scopes\UserScope.cs" />
     <Compile Include="Shared\Entity.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoLearning.SharedKarnel\ToDoLearning.SharedKarnel.csproj">
+      <Project>{5A1AB8EC-2DDA-4622-8C14-C7EBE1541784}</Project>
+      <Name>ToDoLearning.SharedKarnel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
