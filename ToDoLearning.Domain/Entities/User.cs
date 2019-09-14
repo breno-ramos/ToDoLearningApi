@@ -1,4 +1,5 @@
 ﻿using System;
+using ToDoLearning.Domain.Scopes;
 
 namespace ToDoLearning.Domain.Entities
 {
@@ -9,6 +10,9 @@ namespace ToDoLearning.Domain.Entities
             Id = id;
             Nome = nome;
             Email = email;
+
+            UserScope.ValidUserName(Nome);
+            UserScope.ValidEmail(Email);
         }
 
         public Guid Id { get; private set; }
