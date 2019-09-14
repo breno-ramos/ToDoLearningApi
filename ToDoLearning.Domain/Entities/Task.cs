@@ -10,8 +10,8 @@ namespace ToDoLearning.Domain.Entities
             Title = title;
             CreateDate = DateTime.Now;
         }
-        
+
         public string Title { get; private set; }
-        public DateTime CreateDate { get; private set; }
+        public DateTime CreateDate { get; private set; }       
     }
 }
