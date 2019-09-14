@@ -2,7 +2,7 @@
 packages/
 ToDoLearning.Domain/obj/
 ToDoLearning.Domain/bin/
-ToDoLearning.Infrastructure/obj/
-ToDoLearning.Infrastructure/bin/
+ToDoLearning.InfraEstructure/obj/
+ToDoLearning.InfraEstructure/bin/
 ToDoLearning.Tests/obj/
 ToDoLearning.Tests/bin/
