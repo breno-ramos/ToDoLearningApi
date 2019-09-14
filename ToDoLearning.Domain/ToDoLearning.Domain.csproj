@@ -43,10 +43,17 @@
     <Compile Include="Entities\Task.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scopes\TaskScope.cs" />
+    <Compile Include="Scopes\UserScope.cs" />
     <Compile Include="Shared\Entity.cs" />
     <Compile Include="Specs\TaskSpecs.cs" />
     <Compile Include="Specs\UserSpecs.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ToDoLearning.SharedKarnel\ToDoLearning.SharedKarnel.csproj">
+      <Project>{5A1AB8EC-2DDA-4622-8C14-C7EBE1541784}</Project>
+      <Name>ToDoLearning.SharedKarnel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

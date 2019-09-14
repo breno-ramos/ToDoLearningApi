@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+using System;
 using System.Linq;
 using ToDoLearning.Domain.Shared;
+using ToDoLearning.Domain.Scopes;
 
 namespace ToDoLearning.Domain.Entities
 {
@@ -13,6 +15,9 @@ namespace ToDoLearning.Domain.Entities
             Nome = nome;
             Email = email;
             _tasks = new List<Task>();
+
+            UserScope.ValidUserName(Nome);
+            UserScope.ValidEmail(Email);
         }
         
         public string Nome { get; private set; }

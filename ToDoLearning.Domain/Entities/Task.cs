@@ -1,5 +1,6 @@
 ﻿using System;
 using ToDoLearning.Domain.Shared;
+using ToDoLearning.Domain.Scopes;
 
 namespace ToDoLearning.Domain.Entities
 {
@@ -9,6 +10,8 @@ namespace ToDoLearning.Domain.Entities
         {
             Title = title;
             CreateDate = DateTime.Now;
+
+            TaskScope.ValidTaskTitle(Title);
         }
 
         public string Title { get; private set; }
