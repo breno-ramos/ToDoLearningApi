@@ -13,8 +13,8 @@ namespace ToDoLearning.Domain.Entities
 
             TaskScope.ValidTaskTitle(Title);
         }
-        
+
         public string Title { get; private set; }
-        public DateTime CreateDate { get; private set; }
+        public DateTime CreateDate { get; private set; }       
     }
 }

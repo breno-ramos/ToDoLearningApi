@@ -46,6 +46,8 @@
     <Compile Include="Scopes\TaskScope.cs" />
     <Compile Include="Scopes\UserScope.cs" />
     <Compile Include="Shared\Entity.cs" />
+    <Compile Include="Specs\TaskSpecs.cs" />
+    <Compile Include="Specs\UserSpecs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ToDoLearning.SharedKarnel\ToDoLearning.SharedKarnel.csproj">
