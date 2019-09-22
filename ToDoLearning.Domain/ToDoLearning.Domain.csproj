@@ -43,6 +43,8 @@
     <Compile Include="Entities\Task.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ITaskRepository.cs" />
+    <Compile Include="Repositories\IUserRepository.cs" />
     <Compile Include="Scopes\TaskScope.cs" />
     <Compile Include="Scopes\UserScope.cs" />
     <Compile Include="Shared\Entity.cs" />

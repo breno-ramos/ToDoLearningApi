@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System;
 using System.Linq;
 using ToDoLearning.Domain.Shared;
 using ToDoLearning.Domain.Scopes;
@@ -22,7 +21,7 @@ namespace ToDoLearning.Domain.Entities
         
         public string Nome { get; private set; }
         public string Email { get; private set; }
-        public IReadOnlyCollection<Task> Tasks { get { return _tasks.ToArray(); } }
+        public ICollection<Task> Tasks { get { return _tasks.ToArray(); } }
 
         public void AddTask(Task task)
         {
