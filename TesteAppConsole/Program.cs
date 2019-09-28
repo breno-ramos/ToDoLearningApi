@@ -8,7 +8,7 @@ namespace TesteAppConsole
     {
         static void Main(string[] args)
         {
-            User user = new User("Marllon Ramos", "87marllon@gmail.com");
+            User user = new User("Alex Marden", "amarden.nascimento@gmail.com");
 
             UserRepository repository = new UserRepository();
             repository.Create(user);
