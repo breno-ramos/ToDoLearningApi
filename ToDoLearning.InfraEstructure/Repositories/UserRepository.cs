@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data.Entity;
+using System.Linq;
 using ToDoLearning.Domain.Entities;
 using ToDoLearning.Domain.Repositories;
 using ToDoLearning.InfraEstructure.DataContext;
@@ -17,7 +19,7 @@ namespace ToDoLearning.InfraEstructure.Repositories
         public void Create(User user)
         {
             _context.Users.Add(user);
-            int result = _context.SaveChanges();
+            _context.SaveChanges();
         }
 
         public void Delete(Guid id)
@@ -27,12 +29,15 @@ namespace ToDoLearning.InfraEstructure.Repositories
 
         public User GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Users.Where(x => x.Id == id).FirstOrDefault();
         }
 
         public void Update(User user)
         {
-            throw new NotImplementedException();
+            _context
+                .Entry<User>(user)
+                .State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }

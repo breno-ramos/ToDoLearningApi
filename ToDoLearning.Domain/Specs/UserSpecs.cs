@@ -8,9 +8,9 @@ namespace ToDoLearning.Domain.Specs
 {
     public class UserSpecs
     {
-        public static Expression<Func<User, List<Task>>> GetByUser(Guid id)
-        {
-            return x => x.Tasks.Where(y => y.Id == id).ToList();
-        }
+        //public static Expression<Func<User, List<Task>>> GetByUser(Guid id)
+        //{
+        //    return x => x.Tasks.Where(y => y.Id == id).ToList();
+        //}
     }
 }

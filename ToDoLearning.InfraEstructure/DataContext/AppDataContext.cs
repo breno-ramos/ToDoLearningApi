@@ -10,6 +10,7 @@ namespace ToDoLearning.InfraEstructure.DataContext
             : base("StrConnection")
         {
             Configuration.ProxyCreationEnabled = false;
+            Configuration.LazyLoadingEnabled = false;
         }
 
         public DbSet<User> Users { get; set; }

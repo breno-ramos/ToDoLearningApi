@@ -6,8 +6,11 @@ namespace ToDoLearning.Domain.Entities
 {
     public class Task : Entity
     {
-        public Task(string title)
+        protected Task() { }
+
+        public Task(User user, string title)
         {
+            User = user;
             Title = title;
             CreateDate = DateTime.Now;
 
@@ -15,6 +18,7 @@ namespace ToDoLearning.Domain.Entities
         }
 
         public string Title { get; private set; }
-        public DateTime CreateDate { get; private set; }       
+        public DateTime CreateDate { get; private set; }
+        public User User { get; private set; }
     }
 }
