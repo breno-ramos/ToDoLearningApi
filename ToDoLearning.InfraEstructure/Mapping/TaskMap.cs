@@ -17,6 +17,8 @@ namespace ToDoLearning.InfraEstructure.Mapping
                 .IsRequired();
 
             Property(x => x.CreateDate);
+
+            HasRequired(x => x.User);
         }
     }
 }

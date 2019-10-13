@@ -20,7 +20,13 @@ namespace ToDoLearning.InfraEstructure.Mapping
                 .HasMaxLength(100)
                 .IsRequired();
 
-            HasMany(x => x.Tasks);
+            // mapeamento 1 p/ muitos
+            //HasMany(x => x.Tasks);
+            //HasOptional(x => x.Tasks);
+            //HasMany(x => x.Tasks).WithRequired(x => x.User);
+
+            // caso de mapeamento muitos p/ muitos
+            //HasMany(x => x.Tasks).WithMany(x => x.User);
         }
     }
 }

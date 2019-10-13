@@ -8,12 +8,16 @@ namespace TesteAppConsole
     {
         static void Main(string[] args)
         {
-            User user = new User("Alex Marden", "amarden.nascimento@gmail.com");
+            User user = new User("Marllon Ramos", "87marllon@gmail.com");
 
             UserRepository repository = new UserRepository();
             repository.Create(user);
 
-            Console.WriteLine("Usuario cadastrado com sucesso!");
+            Task task = new Task(user, "Nadar");
+            TaskRepository taskRepository = new TaskRepository();
+            taskRepository.Create(task);
+
+            Console.WriteLine("Tarefa cadastrado com sucesso!");
 
             Console.ReadKey();
         }
