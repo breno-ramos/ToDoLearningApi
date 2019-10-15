@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\UserCommands\UpdateUserCommand.cs" />
+    <Compile Include="Commands\UserCommands\CreateUserCommand.cs" />
     <Compile Include="Entities\Task.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -47,6 +49,7 @@
     <Compile Include="Repositories\IUserRepository.cs" />
     <Compile Include="Scopes\TaskScope.cs" />
     <Compile Include="Scopes\UserScope.cs" />
+    <Compile Include="Services\IUserApplicationService.cs" />
     <Compile Include="Shared\Entity.cs" />
     <Compile Include="Specs\TaskSpecs.cs" />
     <Compile Include="Specs\UserSpecs.cs" />
@@ -57,5 +60,6 @@
       <Name>ToDoLearning.SharedKarnel</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
