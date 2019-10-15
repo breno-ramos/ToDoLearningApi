@@ -4,11 +4,14 @@ ToDoLearning.Domain/obj/
 ToDoLearning.Domain/bin/
 ToDoLearning.InfraEstructure/obj/
 ToDoLearning.InfraEstructure/obj/Debug/
+ToDoLearning.InfraEstructure/obj/Debug/CoreCompileInputs.cache
 ToDoLearning.InfraEstructure/bin/
 ToDoLearning.Tests/obj/
 ToDoLearning.Tests/bin/
 ToDoLearning.SharedKarnel/obj/
 ToDoLearning.SharedKarnel/bin/
+ToDoLearning.ApplicationService/obj/
+ToDoLearning.ApplicationService/bin/
 TesteAppConsole/obj/
 TesteAppConsole/bin/
 TesteAppConsole/App.config
