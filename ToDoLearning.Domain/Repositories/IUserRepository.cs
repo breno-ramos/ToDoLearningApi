@@ -5,8 +5,8 @@ namespace ToDoLearning.Domain.Repositories
 {
     public interface IUserRepository
     {
-        void Create(User task);
-        void Update(User task);
+        void Create(User user);
+        void Update(User user);
         void Delete(Guid id);
         User GetById(Guid id);
     }
