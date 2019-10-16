@@ -20,6 +20,11 @@ namespace ToDoLearning.Domain.Entities
             UserScope.ValidUserName(Nome);
             UserScope.ValidEmail(Email);
         }
+        public void Update(string nome, string email)
+        {
+            Nome = nome;
+            Email = email;
+        }
 
         public string Nome { get; private set; }
         public string Email { get; private set; }
