@@ -40,9 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Commands\UserCommands\UpdateUserCommand.cs" />
+    <Compile Include="Commands\UserCommands\CreateUserCommand.cs" />
     <Compile Include="Commands\TaskCommands\CreateTaskCommand.cs" />
     <Compile Include="Commands\TaskCommands\DeleteTaskCommand.cs" />
     <Compile Include="Commands\TaskCommands\UpdateTaskCommand.cs" />
+
     <Compile Include="Entities\Task.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,6 +54,7 @@
     <Compile Include="Repositories\IUserRepository.cs" />
     <Compile Include="Scopes\TaskScope.cs" />
     <Compile Include="Scopes\UserScope.cs" />
+    <Compile Include="Services\IUserApplicationService.cs" />
     <Compile Include="Services\ITaskApplicationService.cs" />
     <Compile Include="Shared\Entity.cs" />
     <Compile Include="Specs\TaskSpecs.cs" />
