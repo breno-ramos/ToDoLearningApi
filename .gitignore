@@ -12,6 +12,10 @@ ToDoLearning.SharedKarnel/obj/
 ToDoLearning.SharedKarnel/bin/
 ToDoLearning.ApplicationService/obj/
 ToDoLearning.ApplicationService/bin/
+ToDoLearning.CrossCutting/obj/
+ToDoLearning.CrossCutting/bin/
+ToDoLearning.Api/bin/
+ToDoLearning.Api/obj/
 TesteAppConsole/obj/
 TesteAppConsole/bin/
 TesteAppConsole/App.config
