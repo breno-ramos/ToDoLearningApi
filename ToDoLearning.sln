@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAppConsole", "TesteApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoLearning.ApplicationService", "ToDoLearning.ApplicationService\ToDoLearning.ApplicationService.csproj", "{1B781F60-24B5-46A2-ACE2-4CEF0781A129}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoLearning.CrossCutting", "ToDoLearning.CrossCutting\ToDoLearning.CrossCutting.csproj", "{9D56995F-4A51-4CD2-BB19-08339DC6A1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoLearning.Api", "ToDoLearning.Api\ToDoLearning.Api.csproj", "{3BDD0A13-064B-452F-9960-16A5CB73508D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{1B781F60-24B5-46A2-ACE2-4CEF0781A129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B781F60-24B5-46A2-ACE2-4CEF0781A129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B781F60-24B5-46A2-ACE2-4CEF0781A129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D56995F-4A51-4CD2-BB19-08339DC6A1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D56995F-4A51-4CD2-BB19-08339DC6A1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D56995F-4A51-4CD2-BB19-08339DC6A1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D56995F-4A51-4CD2-BB19-08339DC6A1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BDD0A13-064B-452F-9960-16A5CB73508D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDD0A13-064B-452F-9960-16A5CB73508D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDD0A13-064B-452F-9960-16A5CB73508D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDD0A13-064B-452F-9960-16A5CB73508D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
