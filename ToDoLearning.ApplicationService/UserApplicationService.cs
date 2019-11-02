@@ -3,13 +3,16 @@ using ToDoLearning.Domain.Commands.UserCommands;
 using ToDoLearning.Domain.Entities;
 using ToDoLearning.Domain.Repositories;
 using ToDoLearning.Domain.Services;
+using ToDoLearning.InfraEstructure.Transaction;
 
 namespace ToDoLearning.ApplicationService
 {
-    public class UserApplicationService : IUserApplicationService
+    public class UserApplicationService : ApplicationService, IUserApplicationService
     {
         private IUserRepository _repository;
-        public UserApplicationService(IUserRepository repository)
+
+        public UserApplicationService(IUow uow, IUserRepository repository)
+            : base(uow)
         {
             _repository = repository;
         }
@@ -18,13 +21,17 @@ namespace ToDoLearning.ApplicationService
         {
             var user = new User(command.Nome, command.Email);
             _repository.Create(user);
-            return user;
+
+            if(Commit())                
+                return user;
+
+            return null;
         }
 
         public User GetById(Guid id)
         {
             return _repository.GetById(id);
-            
+
         }
 
         public User Update(UpdateUserCommand command)
@@ -32,8 +39,11 @@ namespace ToDoLearning.ApplicationService
             var user = _repository.GetById(command.Id);
             user.Update(command.Nome, command.Email);
             _repository.Update(user);
-            return user;
 
+            if(Commit())
+                return user;
+
+            return null;
         }
     }
 }

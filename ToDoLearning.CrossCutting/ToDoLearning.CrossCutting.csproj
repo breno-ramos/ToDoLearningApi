@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DependencyRegister.cs" />
+    <Compile Include="DomainNotificationHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +68,10 @@
     <ProjectReference Include="..\ToDoLearning.InfraEstructure\ToDoLearning.InfraEstructure.csproj">
       <Project>{a2698680-0f14-418d-b5bc-eb33b7d186a7}</Project>
       <Name>ToDoLearning.InfraEstructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDoLearning.SharedKarnel\ToDoLearning.SharedKarnel.csproj">
+      <Project>{5A1AB8EC-2DDA-4622-8C14-C7EBE1541784}</Project>
+      <Name>ToDoLearning.SharedKarnel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

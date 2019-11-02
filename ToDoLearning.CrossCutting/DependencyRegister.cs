@@ -5,6 +5,8 @@ using ToDoLearning.InfraEstructure.Repositories;
 using ToDoLearning.Domain.Services;
 using ToDoLearning.ApplicationService;
 using ToDoLearning.InfraEstructure.DataContext;
+using ToDoLearning.SharedKarnel.Events;
+using ToDoLearning.SharedKarnel;
 
 namespace ToDoLearning.CrossCutting
 {
@@ -16,7 +18,9 @@ namespace ToDoLearning.CrossCutting
             container.RegisterType<ITaskRepository, TaskRepository>(new HierarchicalLifetimeManager());
             container.RegisterType<IUserRepository, UserRepository>(new HierarchicalLifetimeManager());
             container.RegisterType<ITaskApplicationService, TaskApplicationService>(new HierarchicalLifetimeManager());
-            container.RegisterType<IUserApplicationService, UserApplicationService>(new HierarchicalLifetimeManager());            
+            container.RegisterType<IUserApplicationService, UserApplicationService>(new HierarchicalLifetimeManager());
+
+            container.RegisterType<IHandler<DomainNotification>, DomainNotificationHandler>(new HierarchicalLifetimeManager());
         }
     }
 }
